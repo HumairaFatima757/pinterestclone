@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(52, 64, 64)                     ;
+            background-image: url("https://img.freepik.com/free-photo/elevate-view-social-media-icon-wifi-symbol_23-2147841323.jpg?size=626&ext=jpg&ga=GA1.1.1385074479.1678728670&semt=ais");
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: rgb(225, 18, 18);
+            /* border: 1px solid #ccc; */
+            border-radius: 10px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 8px;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            /* background-color: #4a5568; */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #f30909;
+            /* font-size: 2rem; */
+            /* font-size: 100px; */
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Increased vertical gap */
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            /* border: 1px solid #98a9c0; */
+                border-radius: 5px;
+                width: 100%;
+            }
+
+            input[type="submit"] {
+                background-color: #e3131d;
+                color: rgb(236, 226, 226);
+                cursor: pointer;
+            }
+
+        input[type="submit"]:hover {
+            background-color: #1a202c;
+        }
+    </style>
+    <title>Beautiful Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div  class="container" w-full bg-zinc-800 px-10  >
+    <h1 class="text-3xl text-center " >create a new post  </h1>
+    <form id="uploadform" action="/createpost" method="post" enctype="multipart/form-data">
+        <input class="block w-1/3 px-3 py-2 rounded  " type="file" name="postimage" >
+        <input class="block w-1/3 px-3 py-2 rounded bg-zinc-200 " type="text" name="imagetitle" placeholder="title">
+        <textarea class="block w-1/3 px-3 py-2 rounded bg-zinc-200 border h-40" type="text" name="imagedescription" placeholder="description"></textarea>
+        <input class="block w-1/4 px-3 py-2 rounded bg-red-200 " type="submit" value="upload post ">
+        </form>
+   
+  </div> 
+</body>
+</html>

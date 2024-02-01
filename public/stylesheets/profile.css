@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #46545d; */
+    background-image: url("https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30501.jpg?size=626&ext=jpg&ga=GA1.1.1385074479.1678728670&semt=ais")  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#algn{
+    height: 92vh;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    margin-bottom: -120px;
+}
+
+#card{
+    width: 402px;
+    height: 443px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px 0 #E7E9EB, 0 6px 20px 0 #E7E9EB; */
+}
+
+#upper-bg{
+    width: 100%;
+    height: 35%;
+    /* background-color: #FFE400; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-pic{
+    width: 35%;
+    /* background-color: rgba(193, 166, 18, 0.943);
+    border: 3px solid #FFE400; */
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    top: 40px;
+}
+
+#lower-bg{
+    width: 100%;
+    height: 65%;
+    /* background: rgb(193, 188, 188); */
+}
+
+.text{
+    text-align: center;
+    padding-top: 35px;
+}
+
+.text .name{
+    font-weight: 600;
+    font-size: large;
+    padding: 0;
+    margin: 5px;
+}
+
+.text .title{
+    padding: 0;
+    margin: 10px;
+    font-size: 15px;
+}
+
+#icons{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#icons img{
+    width: 80%;
+    height: 90%;
+    margin-right:10px ;
+}
+
+.ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#btn button{
+    margin: 0 20px;
+    padding: 10px 15px;
+    /* background-color: #FFE400; */
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+#btn button:hover{
+    box-shadow: 0 4px 8px 0 #E7E9EB, 0 6px 20px 0 #E7E9EB;
+}
+
+#l-c-s{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+#l-c-s .num{
+    display: flex;
+}
+
+#l-c-s .dvr{
+    width: 2px;
+    height: 25px;
+    background-color: gray;
+}
+
+#l-c-s img{
+    width: 24px;
+    height: 24px;
+}
+
+.license{
+    font-size: 12px;
+    text-align: center;
+}
+
+.license .ll{
+    padding: 0 10px;
+    display: inline;
+}
+/* styles.css */
+.logout-link {
+    color: #fff;
+    background-color: #e74c3c; /* Red color, you can change it */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .logout-link:hover {
+    background-color: #c0392b; /* Darker red color on hover, you can change it */
+  }
+  
+
+  .text .title1{
+    padding: 0;
+    margin: -3px;
+    font-size: 30px;
+}
+
+.text .title2{
+    padding: 0;
+    margin: 5px;
+    font-size: 25px;
+}
+
+/* Add this CSS to style the card */
+.card {
+    width: 18rem;
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25rem; /* Adjust font size as needed */
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.card-link {
+    display: block;
+    margin-top: 10px; /* Adjust margin as needed */
+    text-decoration: none;
+    color: #007BFF; /* Link color, you can change it */
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+.card img {
+    width: 100%;
+    height: 235px;
+    margin-top: 20px;
+}
+
+.flex{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+
+}
+.profile-pic {
+    width: 38%;
+    /* background-color: rgba(193, 166, 18, 0.943);
+    border: 3px solid #FFE400; */
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    top: 53px;
+    height: 82%;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 18rem;
+    margin-left: 20px;
+    margin-bottom: 20px; /* Add margin-bottom to create space between cards */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 235px;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+
+
+
+.card-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+.card-title {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis (...) to indicate overflow */
+    white-space: normal; 
+    margin-left: 100px;
+    /* Allow wrapping to the next line */
+}

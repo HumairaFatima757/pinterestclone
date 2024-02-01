@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/profile.css">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <title>document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="bigcontainer">
+    <div id="algn">
+      <div id="card">
+        <div id="upper-bg" class="relative">
+          <img src="/images/uploads/<%= userdata.dp%>" alt="profile-pic" class="profile-pic">
+        
+          <span id="uploadicon" class="w-8 h-8= absolute bottom-0 right-14 mb-0 rounded-full flex items-center justify-center bg-zinc-200">
+            <i class="text-zinc-1000 ri-pencil-line"></i>
+          </span>
+        </div>
+        
+        
+        <div id="lower-bg">
+          <div class="text">
+            <p name="username" class="title1"><%= userdata.username %></p>
+            <p name="fullname" class="title2">@<%= userdata.fullname %> <br> </p>
+            <p class="title"> <br> </p>
+            <a class="btn logout-link" href="/logout">Logout</a><br> <br>
+            <a class="btn logout-link btn2" href="/add">Add</a><br> <br>
+<form id="uploadform" hidden action="/upload" method="post" enctype="multipart/form-data">
+              <input type="file" name="dp">
+              <!-- <input type="text" name="imagecaption"> -->
+              <!-- <input type="submit" value="upload"> -->
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container2 ">
+ <div class="container3">
+<%userdata.posts.forEach(function (post) {%>
+
+    <div class="card" style="width: 18rem;">
+ 
+        <img src="/images/uploads/<%= post.image %>" class="card-img-top" alt="">
+        <div class="card-body">
+        <h5 class="card-title"><%= post.postText %></h5>
+        <h5 class="card-title"><%= post.imagedescription %></h5>
+     
+
+
+        <!-- <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a> -->
+      </div>
+    </div>
+ <%})%>
+  </div>
+  </div>
+
+  <script>
+    document.querySelector("#uploadicon").addEventListener("click", function(){
+document.querySelector("#uploadform input").click()
+    })
+    
+document.querySelector("#uploadform input").addEventListener("change", function(){
+  document.querySelector("#uploadform").submit()
+})
+    
+
+
+  </script>
+
+</body>
+</html>
